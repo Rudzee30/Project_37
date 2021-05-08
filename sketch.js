@@ -28,8 +28,7 @@ function setup() {
   mo.addAnimation("collided",mon1);
   mo.scale=0.1;
   mo.setCollider("circle",0,0,200);
-  camera.position.x=200;
-  camera.position.y=mo.y;
+  
   
   ig = createSprite(200, 380,400,10);
   ig.visible=false;
@@ -101,7 +100,7 @@ function draw() {
   ba1();
   drawSprites();
   fill("White");
-  text("Score: "+ score, 300,500);
+  text("Score: "+ score, 300,50);
 }
 function ro1(){
   if (World.frameCount%200===0) {
